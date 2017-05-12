@@ -61,14 +61,15 @@ unsigned char get_val(string value) {
 
 int math(vector<string> input) {
     int counter = 1;
+    //counter will be used to incremement he variables
     int value= get_val(input.at(0));
-//value is equal to the first spot in input
+//value is equal to the value grabbed from user's input
     while(counter < (int) input.size()) {
         char operand = input.at(counter).at(0);
         counter++;
-//this is incrementing the input by one everyime it's used
+//this is incrementing the input by one everytime it's used
         unsigned char second_var = get_val(input.at(counter));
-// creating a second variable and grabbing the input and incrementing it through counter
+// creating a second variable and grabbing the input then incrementing it through counter
         counter++;
 //these are just operand functions that executes as needed
         if (operand == '+') {
